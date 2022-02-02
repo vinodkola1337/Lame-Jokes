@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply font-sans text-base bg-[#f4f4f4];
+    }
+
+    a{
+        @apply text-[#666] no-underline;
+    }
+
+    ul{
+        @apply list-none;
+    }
+
+    hr{
+        @apply my-4;
+    }
+
+    *{
+        @apply box-border m-0 p-0;
+    }
+}
+  
+@layer components{
+    .container{
+        @apply max-w-4xl m-auto overflow-hidden px-8 py-4 bg-white;
+    }
+}
